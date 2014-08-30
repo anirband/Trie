@@ -98,7 +98,7 @@ def substr(trie,count_threshold=1,length_threshold=1,no_doc_threshold=1):   #Tak
 
     return result
 
-def get_doc_no(trie,string):
+def get_doc_no(trie,string):                           #Gets the document number that has the substring
     if haskey(trie,string):
         n=len(string)
         X=trie[string[0]]
@@ -114,7 +114,7 @@ wordl=['ana  ppleop','ikno  pplens','yy  dpplsar','notoap  tple'] #List of strin
 
 d=create_trie(wordl)                        #d is the trie created
 
-print d
+print d                                     #Prints the Trie
 
 print get_doc_no(d,'pp')
 
